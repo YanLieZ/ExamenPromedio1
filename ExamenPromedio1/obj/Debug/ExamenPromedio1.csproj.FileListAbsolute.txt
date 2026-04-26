@@ -1,0 +1,7 @@
+D:\TULUS\TercerCiclo\Taller\Programación\Programación_Yan\ExamenPromedio1\ExamenPromedio1\obj\Debug\ExamenPromedio1.csproj.AssemblyReference.cache
+D:\TULUS\TercerCiclo\Taller\Programación\Programación_Yan\ExamenPromedio1\ExamenPromedio1\obj\Debug\ExamenPromedio1.csproj.CoreCompileInputs.cache
+D:\TULUS\TercerCiclo\Taller\Programación\Programación_Yan\ExamenPromedio1\ExamenPromedio1\obj\Debug\ExamenPromedio1.pdb
+D:\TULUS\TercerCiclo\Taller\Programación\Programación_Yan\ExamenPromedio1\ExamenPromedio1\bin\Debug\ExamenPromedio1.exe.config
+D:\TULUS\TercerCiclo\Taller\Programación\Programación_Yan\ExamenPromedio1\ExamenPromedio1\bin\Debug\ExamenPromedio1.exe
+D:\TULUS\TercerCiclo\Taller\Programación\Programación_Yan\ExamenPromedio1\ExamenPromedio1\bin\Debug\ExamenPromedio1.pdb
+D:\TULUS\TercerCiclo\Taller\Programación\Programación_Yan\ExamenPromedio1\ExamenPromedio1\obj\Debug\ExamenPromedio1.exe

@@ -15,6 +15,7 @@ namespace ExamenPromedio1
             string name = Console.ReadLine();
 
             Player player = new Player(name, 100);
+            player.ShowPlayerInfo();
 
             //Situaciones
             TextSituation s1 = new TextSituation("Te despiertas en una habitación oscura y ves una sombra pasar por delante de la entrada....." +
@@ -51,7 +52,7 @@ namespace ExamenPromedio1
             //--------------
 
             Game game = new Game();
-            game.Player = player;
+            game.player = player;
             game.startSituation = s1;
 
             game.StartGame();

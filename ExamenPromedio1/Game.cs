@@ -27,11 +27,11 @@ namespace ExamenPromedio1
                 {
                     currentSituation.ExecuteOption(player);
 
-                    If(currentSituation == finalSituation) break;
+                    if(currentSituation is FinalSituation) break;
 
                     for(int i = 0; i < currentSituation.options.Count; i++)
                     {
-                        Console.WriteLine((i + 1) + " . " + currentSituation.options[i].Text);
+                        Console.WriteLine((i + 1) + " . " + currentSituation.options[i].text);
                     }
 
                     int choice = int.Parse(Console.ReadLine()) -1;
@@ -39,6 +39,8 @@ namespace ExamenPromedio1
                     Option selected = currentSituation.options[choice];
 
                     player.health = player.health + selected.healthChange;
+
+                    player.ShowPlayerInfo();
 
                     currentSituation = selected.nextSituation;
                 }
@@ -64,9 +66,9 @@ namespace ExamenPromedio1
                 return;
             }
 
-            if(currentSituation == finalSituation)
+            if(currentSituation is FinalSituation)
             {
-                finalSituation f = (finalSituation)currentSituation;
+                FinalSituation f = (FinalSituation)currentSituation;
 
                 if (f.endingType == "Good")
                 {
