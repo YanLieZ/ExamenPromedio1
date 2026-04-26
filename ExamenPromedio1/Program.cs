@@ -10,6 +10,9 @@ namespace ExamenPromedio1
     {
         static void Main(string[] args)
         {
+
+
+
         }
     }
 }
