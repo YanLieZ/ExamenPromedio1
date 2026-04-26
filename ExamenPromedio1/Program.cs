@@ -32,22 +32,22 @@ namespace ExamenPromedio1
             //Alternativas de selección
 
             //Situación 1
-            s1.options.Add(new Option("Buscas un escondite dentro del cuarto oscuro para refugiarte de lo que se avecina", -10, s2));
-            s1.options.Add(new Option("Decides correr furea de la habitación y probar suerte escapando mientras no te ha visto", -10, s2));
+            s1.options.Add(new Option("Buscas un escondite dentro del cuarto oscuro para refugiarte de lo que se avecina (recibes 10 de daño)", -10, s2));
+            s1.options.Add(new Option("Decides correr furea de la habitación y probar suerte escapando mientras no te ha visto (recibes 20 de daño)", -20, s2));
 
 
 
 
             //Situación 2
 
-            s2.options.Add(new Option("Decides pelear contra el monstruo sabiendo que tienes todas las de perder", -30, s3));
-            s2.options.Add(new Option("Intentas escapar de agarre del monstruo, asi que forcejeas, cayendo al piso luego de darle una patada", -15, s3));
+            s2.options.Add(new Option("Decides pelear contra el monstruo sabiendo que tienes todas las de perder (recibes 30 de daño)", -30, s3));
+            s2.options.Add(new Option("Intentas escapar de agarre del monstruo, asi que forcejeas, cayendo al piso luego de darle una patada (recibes 15 de daño", -15, s3));
 
             //Situación 3
 
-            s3.options.Add(new Option("Decides buscar la llave rápidamente y salir por la puerta que da directo al exterior", -20, good));
-            s3.options.Add(new Option("Corres rápidamente a través del túnel sin importar las consecuencias, tienes mucho miedo y solo quieres escapar", -15, neutral));
-            s3.options.Add(new Option("Das la vuelta para enfrentar al monstruo porque no crees que ningún camino sea seguro", -60, bad));
+            s3.options.Add(new Option("Decides buscar la llave rápidamente y salir por la puerta que da directo al exterior (recibes 5 de daño)", -5, good));
+            s3.options.Add(new Option("Corres rápidamente a través del túnel sin importar las consecuencias, tienes mucho miedo y solo quieres escapar (te haces 15 de daño)", -15, neutral));
+            s3.options.Add(new Option("Das la vuelta para enfrentar al monstruo porque no crees que ningún camino sea seguro (Recibes 60 de daño)", -60, bad));
 
             //--------------
 
