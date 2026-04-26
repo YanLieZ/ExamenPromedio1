@@ -34,13 +34,13 @@ namespace ExamenPromedio1
                         Console.WriteLine((i + 1) + " . " + currentSituation.options[i].Text);
                     }
 
-                    int choice = int.Parse(Console.ReadLine()); -1;
+                    int choice = int.Parse(Console.ReadLine()) -1;
 
                     Option selected = currentSituation.options[choice];
 
                     player.health = player.health + selected.healthChange;
 
-                    currentSituation = selected.nextSituation
+                    currentSituation = selected.nextSituation;
                 }
 
                 ShowEnding();
@@ -70,11 +70,11 @@ namespace ExamenPromedio1
 
                 if (f.endingType == "Good")
                 {
-                    Console.WriteLine("Final bueno")
+                    Console.WriteLine("Final bueno");
                 }
                 else if (f.endingType == "Neutral")
                 {
-                    Console.WriteLine("Final neutral")
+                    Console.WriteLine("Final neutral");
                 }
                 else Console.WriteLine("Final malo");
             }
