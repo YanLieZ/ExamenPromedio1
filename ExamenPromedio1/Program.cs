@@ -17,6 +17,8 @@ namespace ExamenPromedio1
             Player player = new Player(name, 100);
             player.ShowPlayerInfo();
 
+            List<Situation> situations = new List<Situation>();
+
             //Situaciones
             TextSituation s1 = new TextSituation("Te despiertas en una habitación oscura y ves una sombra pasar por delante de la entrada....." +
                 " no sabes qué es pero no parece humano, sino un monstruo enorme");
@@ -29,21 +31,20 @@ namespace ExamenPromedio1
             FinalSituation neutral = new FinalSituation("Sobreviviste por poco, deberias ir a sanar un poco tus heridas antes de seguir.... Ahora hace falta buscar un médico", "Neutral");
             FinalSituation bad = new FinalSituation("El monstruo te alcanzó y te encierra para siempre dentro de la mansión", "Bad");
 
+            situations.Add(s1);
+            situations.Add(s2);
+            situations.Add(s3);
+            situations.Add(good);
+            situations.Add(neutral);
+            situations.Add(bad);
+
             //Alternativas de selección
 
-            //Situación 1
             s1.options.Add(new Option("Buscas un escondite dentro del cuarto oscuro para refugiarte de lo que se avecina (recibes 10 de daño)", -10, s2));
             s1.options.Add(new Option("Decides correr furea de la habitación y probar suerte escapando mientras no te ha visto (recibes 20 de daño)", -20, s2));
 
-
-
-
-            //Situación 2
-
             s2.options.Add(new Option("Decides pelear contra el monstruo sabiendo que tienes todas las de perder (recibes 30 de daño)", -30, s3));
             s2.options.Add(new Option("Intentas escapar de agarre del monstruo, asi que forcejeas, cayendo al piso luego de darle una patada (recibes 15 de daño", -15, s3));
-
-            //Situación 3
 
             s3.options.Add(new Option("Decides buscar la llave rápidamente y salir por la puerta que da directo al exterior (recibes 5 de daño)", -5, good));
             s3.options.Add(new Option("Corres rápidamente a través del túnel sin importar las consecuencias, tienes mucho miedo y solo quieres escapar (te haces 15 de daño)", -15, neutral));
@@ -53,7 +54,7 @@ namespace ExamenPromedio1
 
             Game game = new Game();
             game.player = player;
-            game.startSituation = s1;
+            game.Situations = situations;
 
             game.StartGame();
 

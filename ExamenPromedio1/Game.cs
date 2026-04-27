@@ -11,8 +11,8 @@ namespace ExamenPromedio1
     {
 
         public Player player;
+        public List<Situation> Situations;
         public Situation currentSituation;
-        public Situation startSituation;
 
         public void StartGame()
         {
@@ -21,7 +21,7 @@ namespace ExamenPromedio1
             while (play)
             {
                 player.health = 100;
-                currentSituation = startSituation;
+                currentSituation = Situations[0];
 
                 while(player.health > 0)
                 {
@@ -50,7 +50,7 @@ namespace ExamenPromedio1
                 Console.WriteLine("¿Jugar de nuevo? (s/n) ");
                 string answer = Console.ReadLine().ToLower();
 
-                if(answer != "y")
+                if(answer != "s")
                 {
                     play = false;
                 }
